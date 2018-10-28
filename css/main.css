@@ -1,0 +1,122 @@
+/* Loading overlay */
+
+#overlay {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 1;
+}
+
+/* Landing page */
+
+#landing h2,h6{
+	margin: 0px;
+}
+
+.fa {
+	color: #fff;
+}
+
+/* About*/
+
+#about .col-3 {
+	padding-top: 20px;
+}
+/* Background*/
+
+#splash-img {
+  background:url('../assets/background.jpg');
+  background-size: cover;
+}
+
+.no-pic {
+	background-color: #222;
+}
+
+/* Links */
+
+.fa-github:hover {
+	color: #3d5;
+}
+
+.fa-linkedin:hover {
+	color: #07b;
+}
+
+.fa-facebook:hover {
+	color: #46b;
+}
+
+.purple i {
+	color: grey;
+}
+
+.purple:hover a, .purple:hover i{
+	color: #606;
+}
+
+.icon {
+	margin-right: 10px !important;
+}
+
+.col {
+	margin-left: 20px;
+}
+
+/* Projects */
+
+.card-image {
+	background-size: cover;
+}
+
+/* Skills */
+
+#right {
+	border-right: 1.5px solid rgba(255,255,255,0.8);
+}
+
+/* Contact form */
+
+#honeypot {
+  display: none;
+}
+
+.contact-submit {
+	margin-right: 18px;
+}
+
+/* Footer */
+
+footer {
+	position: relative;
+	margin-top: 0rem;
+}
+
+#top {
+	background-color: #444;
+	color: #fff;
+	position: absolute;
+	padding: 10px;
+	border: none;
+	bottom: calc(100% - 25px);
+	left: 50%;
+	max-height: 50px;
+	max-width: 50px;
+	border-radius: 50%;
+	transform: translateX(-50%);
+}
+
+#top:hover{
+	background-color: #fff;
+}
+
+#top:hover i{
+	color: #606;
+}
+
+.red {
+	color: red;
+}
