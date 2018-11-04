@@ -15,6 +15,8 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/smoothScroll.js"></script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<div id="overlay" class="animated loading center">		
@@ -58,28 +60,28 @@
 					<h2 class="white title">Hi, I'm Aritra Basu.</h2>
 					<h6 class="white sub-title faded">Coder | Developer | Student</h6>
 					<div class="row center">
-				<div class="col">
-					<a href="https://linkedin.com/in/aritra-basu">
-						<span class="icon tooltip tooltip-top-right" data-tooltip="Follow me on LinkedIn">
-							<i class="fa fa-linkedin large" aria-hidden="true"></i>
-						</span>
-					</a>
-				</div>
-				<div class="col">
-					<a href="https://github.com/aritra24">
-						<span class="icon tooltip tooltip-top-right" data-tooltip="Follow me on GitHub">
-							<i class="fa fa-github large" aria-hidden="true"></i>
-						</span>
-					</a>
-				</div>
-				<div class="col">
-					<a href="https://facebook.com/aritra.basu.10">
-						<span class="icon tooltip tooltip-top-right" data-tooltip="Follow me on Facebook">
-							<i class="fa fa-facebook large" aria-hidden="true"></i>
-						</span>
-					</a>
-				</div>
-			</div>
+						<div class="col">
+							<a href="https://linkedin.com/in/aritra-basu">
+								<span class="icon tooltip tooltip-top-right" data-tooltip="Follow me on LinkedIn">
+									<i class="fa fa-linkedin large" aria-hidden="true"></i>
+								</span>
+							</a>
+						</div>
+						<div class="col">
+							<a href="https://github.com/aritra24">
+								<span class="icon tooltip tooltip-top-right" data-tooltip="Follow me on GitHub">
+									<i class="fa fa-github large" aria-hidden="true"></i>
+								</span>
+							</a>
+						</div>
+						<div class="col">
+							<a href="https://facebook.com/aritra.basu.10">
+								<span class="icon tooltip tooltip-top-right" data-tooltip="Follow me on Facebook">
+									<i class="fa fa-facebook large" aria-hidden="true"></i>
+								</span>
+							</a>
+						</div>
+					</div>
 					<h4 class="white sub-title faded">Let's talk</h4>
 				</div>
 			</div>
@@ -264,13 +266,13 @@
 							<div class="pull-right">
 								<div class="title white">Programming languages&nbsp;&nbsp;&nbsp;</div>
 								<div id="right">
-								<ul class="no-bullets white text-center">
-									<li>Python</li>
-									<li>Dart</li>
-									<li>C/C++</li>
-									<li>Java</li>
-									<li>R</li>
-								</ul>
+									<ul class="no-bullets white text-center">
+										<li>Python</li>
+										<li>Dart</li>
+										<li>C/C++</li>
+										<li>Java</li>
+										<li>R</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -278,12 +280,12 @@
 							<div class="pull-left">
 								<div class="title white">Frameworks and Technologies</div>
 								<div>	
-								<ul class="no-bullets white text-center">
-									<li>Flask</li>
-									<li>Flutter</li>
-									<li>MYSQL</li>
-									<li>Dialogflow</li>
-								</ul>
+									<ul class="no-bullets white text-center">
+										<li>Flask</li>
+										<li>Flutter</li>
+										<li>MYSQL</li>
+										<li>Dialogflow</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -319,58 +321,63 @@
 							</div>
 						</div>
 						<input id="honeypot" type="text" name="honeypot" value=""/>
-						<button type="submit" class="contact-submit btn-accent pull-right">submit</button>
-					</form>
-					<div class="toast" style="display: none;" id="message">
-						<p></p>
-						<button class="btn-close"></button>
-					</div>
+						<button
+						type="submit" class="contact-submit btn-accent pull-right g-recaptcha"
+						data-sitekey="6LdahXcUAAAAAMpjFBkSl0edczM4Z7jc1rYkdJBe"
+						data-callback="onSuccess">
+						Submit
+					</button>
+					<!-- <button type="submit" class="contact-submit btn-accent pull-right">submit</button> -->
+				</form>
+				<div class="toast" style="display: none;" id="message">
+					<p></p>
+					<button id="toast-close" class="btn-close pull-left"></button>
 				</div>
 			</div>
 		</div>
-	</section>	
+	</div>
+</section>	
 
 
-	<footer class="footer">
-		<button id="top" data-scroll="landing" class="scroll-link">
-			<span class="icon">
-				<i class="fa fa-chevron-up"></i>
-			</span>
-		</button>
-		<div class="content">
-			<h6 class="sub-title white faded">Reach out to me at</h6>	
-			<div class="row fluid-container center">
-				<div class="col">
-					<a href="https://linkedin.com/in/aritra-basu">
-						<span class="icon">
-							<i class="fa fa-linkedin large" aria-hidden="true"></i>
-						</span>
-					</a>
-				</div>
-				<div class="col">
-					<a href="https://github.com/aritra24">
-						<span class="icon">
-							<i class="fa fa-github large" aria-hidden="true"></i>
-						</span>
-					</a>
-				</div>
-				<div class="col">
-					<a href="https://facebook.com/aritra.basu.10">
-						<span class="icon">
-							<i class="fa fa-facebook large" aria-hidden="true"></i>
-						</span>
-					</a>
-				</div>
+<footer class="footer">
+	<button id="top" data-scroll="landing" class="scroll-link">
+		<span class="icon">
+			<i class="fa fa-chevron-up"></i>
+		</span>
+	</button>
+	<div class="content">
+		<h6 class="sub-title white faded">Reach out to me at</h6>	
+		<div class="row fluid-container center">
+			<div class="col">
+				<a href="https://linkedin.com/in/aritra-basu">
+					<span class="icon">
+						<i class="fa fa-linkedin large" aria-hidden="true"></i>
+					</span>
+				</a>
+			</div>
+			<div class="col">
+				<a href="https://github.com/aritra24">
+					<span class="icon">
+						<i class="fa fa-github large" aria-hidden="true"></i>
+					</span>
+				</a>
+			</div>
+			<div class="col">
+				<a href="https://facebook.com/aritra.basu.10">
+					<span class="icon">
+						<i class="fa fa-facebook large" aria-hidden="true"></i>
+					</span>
+				</a>
 			</div>
 		</div>
-		<div class="center">
-			<div class="divider divider-short"></div>
-		</div>
-		<div class="sub-title">
-			Made with <i class="fa fa-heart animated pulse red" id="pulse-heart" aria-hidden="true"></i> by Aritra Basu
-		</div>
-	</footer>
-
-	<script data-cfasync="false" type="text/javascript" src="js/submission.js"></script>
+	</div>
+	<div class="center">
+		<div class="divider divider-short"></div>
+	</div>
+	<div class="sub-title">
+		Made with <i class="fa fa-heart animated pulse red" id="pulse-heart" aria-hidden="true"></i> by Aritra Basu
+	</div>
+</footer>
+<script data-cfasync="false" type="text/javascript" src="js/submission.js"></script>
 </body>
 </html>
