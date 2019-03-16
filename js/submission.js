@@ -45,9 +45,11 @@ function toast(m,v) {
     $("#message p:first-child").html(m);
     $("#message").css('display','block');
     if (v) {
+        $("#message").removeClass('error');        
         $("#message").addClass('success');
     }
     else{
+        $("#message").removeClass('success');
         $("#message").addClass('error');
     }
 }
